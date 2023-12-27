@@ -20,7 +20,7 @@ services:
     depends_on: 
       - database
     build:
-      context: ./docker
+      context: ./wordpress
       dockerfile: Dockerfile
     image: wordpress-local/server
     ports:
@@ -43,4 +43,3 @@ networks:
 volumes:
   wordpress_database:
     driver: local
-
