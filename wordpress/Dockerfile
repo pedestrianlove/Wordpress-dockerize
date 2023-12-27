@@ -5,7 +5,7 @@ LABEL maintainer="LI JHIH-SIOU"
 ENV TZ=UTC
 
 # Upgrade the system
-RUN yum -y update && yum upgrade
+RUN yum -y update && yum -y upgrade
 
 # Install httpd web server & PHP dependencies & other utilities
 RUN yum -y install                                                              \
